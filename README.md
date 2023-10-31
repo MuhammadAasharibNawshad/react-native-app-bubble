@@ -7,6 +7,24 @@ This repository contains code that for the package which creates floating app bu
 npm install react-native-app-bubble
 ```
 
+### Setup
+
+#### Android
+
+1. Append the following lines to `android/settings.gradle`:
+  	```
+  	include ':react-native-app-bubble'
+    project(':react-native-app-bubble').projectDir = new File(rootProject.projectDir, 	'../node_modules/react-native-app-bubble/android')
+  	```
+2. Insert the following lines inside the dependencies block in `android/app/build.gradle`:
+  	```
+    implementation project(':react-native-app-bubble')
+  	```
+
+#### iOS
+
+1. This library is not supported for iOS. This functionality is not there.
+
 ## Usage
 
 ### Methods
