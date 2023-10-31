@@ -1,13 +1,11 @@
 import * as React from 'react';
 import { useEffect } from 'react';
 import { StyleSheet, View, Text, ToastAndroid, DeviceEventEmitter, Button } from 'react-native';
-import { multiply, add, showFloatingBubble, hideFloatingBubble, requestPermission, checkPermission, initialize, reopenApp, isBubbleOpen } from 'react-native-app-bubble';
+import { showFloatingBubble, hideFloatingBubble, requestPermission, checkPermission, initialize, reopenApp, isBubbleOpen } from 'react-native-app-bubble';
 
 const showToast = (text:any) => ToastAndroid.show(text, 1000)
 
 export default function App() {
-  const [result, setResult] = React.useState<number | undefined>();
-  const [addResult, setAddResult] = React.useState<number | undefined>();
   const onAdd = () => showFloatingBubble().then(() => showToast("Add Floating Button"))
   const onHide = () => hideFloatingBubble().then(() => showToast("Manually Removed Bubble")).catch(() => showToast("Failed to remove"))
   const onRequestPermission = () => requestPermission().then(() => showToast("Permission received")).catch(() => showToast("Failed to get permission"))
