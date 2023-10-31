@@ -17,20 +17,10 @@ const AppBubble = NativeModules.AppBubble
       }
     );
 
-const reopenApp = () => AppBubble.reopenApp();
-const showFloatingBubble = (x = 50, y = 100) => AppBubble.showFloatingBubble(x, y);
-const hideFloatingBubble = () => AppBubble.hideFloatingBubble();
-const checkPermission = () => AppBubble.checkPermission();
-const requestPermission = () => AppBubble.requestPermission();
-const initialize = () => AppBubble.initialize();
-const isBubbleOpen = () => AppBubble.isBubbleOpen();
-
-export default {
-  showFloatingBubble,
-  hideFloatingBubble,
-  requestPermission,
-  checkPermission,
-  initialize,
-  reopenApp,
-  isBubbleOpen
-};
+export const reopenApp = () => AppBubble.reopenApp();
+export const showFloatingBubble = (x = 50, y = 100) => AppBubble.showFloatingBubble(x, y);
+export const hideFloatingBubble = () => AppBubble.hideFloatingBubble();
+export const checkPermission = () => AppBubble.checkPermission();
+export const requestPermission = () => AppBubble.requestPermission();
+export const initialize = () => AppBubble.initialize();
+export const isBubbleOpen = () => AppBubble.isBubbleOpen();
