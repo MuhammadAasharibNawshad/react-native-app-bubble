@@ -1,5 +1,7 @@
 # react-native-app-bubble
-This repository contains code that for the package which creates floating app bubble shortcut when app goes to background. The bubble can reopen app on press.
+This repository contains code that for the package which creates floating app bubble shortcut when app goes to background. The bubble can reopen app on press. Special thanks to [bubble-for-android](https://github.com/txusballesteros/bubbles-for-android) because this is just react native wrapper for that library. 
+
+![Preview](https://github.com/MuhammadAasharibNawshad/react-native-app-bubble/blob/main/preview.gif)
 
 ## Installation
 
