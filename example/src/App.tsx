@@ -27,7 +27,6 @@ export default function App() {
     }
   }
 
-
   useEffect(() => {
     const subscriptionPress = DeviceEventEmitter.addListener("floating-bubble-press", function (e) {
       // showToast("Press Bubble")

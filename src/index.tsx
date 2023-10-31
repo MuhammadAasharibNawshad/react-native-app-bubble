@@ -17,25 +17,13 @@ const AppBubble = NativeModules.AppBubble
       }
     );
 
-
-    
-// const { RNFloatingBubble } = NativeModules;
-
-export const reopenApp = () => AppBubble.reopenApp();
-export const showFloatingBubble = (x = 50, y = 100) => AppBubble.showFloatingBubble(x, y);
-export const hideFloatingBubble = () => AppBubble.hideFloatingBubble();
-export const checkPermission = () => AppBubble.checkPermission();
-export const requestPermission = () => AppBubble.requestPermission();
-export const initialize = () => AppBubble.initialize();
-export const isBubbleOpen = () => AppBubble.isBubbleOpen();
-  
-export function multiply(a: number, b: number): Promise<number> {
-  return AppBubble.multiply(a, b);
-}
-
-export function add(a: number, b: number): Promise<number> {
-  return AppBubble.add(a, b);
-}
+const reopenApp = () => AppBubble.reopenApp();
+const showFloatingBubble = (x = 50, y = 100) => AppBubble.showFloatingBubble(x, y);
+const hideFloatingBubble = () => AppBubble.hideFloatingBubble();
+const checkPermission = () => AppBubble.checkPermission();
+const requestPermission = () => AppBubble.requestPermission();
+const initialize = () => AppBubble.initialize();
+const isBubbleOpen = () => AppBubble.isBubbleOpen();
 
 export default {
   showFloatingBubble,
@@ -44,7 +32,5 @@ export default {
   checkPermission,
   initialize,
   reopenApp,
-  isBubbleOpen,
-  add,
-  multiply
+  isBubbleOpen
 };

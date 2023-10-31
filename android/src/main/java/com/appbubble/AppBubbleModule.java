@@ -40,18 +40,7 @@ public class AppBubbleModule extends ReactContextBaseJavaModule {
     return NAME;
   }
 
-
-  // Example method
   // See https://reactnative.dev/docs/native-modules-android
-  @ReactMethod
-  public void multiply(double a, double b, Promise promise) {
-    promise.resolve(a * b);
-  }
-
-  @ReactMethod
-  public void add(double a, double b, Promise promise) {
-    promise.resolve(a+b);
-  }
 
   @ReactMethod
   public void reopenApp(){
